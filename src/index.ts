@@ -197,6 +197,4 @@ export const createSafeLazy = (config: SafeLazyConfigInit = {}) => {
  * - It will reload the page once if the component fails to load. If the lazy component fails to
  *   load again, the error will be thrown.
  */
-const safeLazy = createSafeLazy();
-
-export default safeLazy;
+export const safeLazy = createSafeLazy();

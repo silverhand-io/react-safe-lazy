@@ -2,7 +2,7 @@ import { render } from '@testing-library/react';
 import { act } from 'react';
 import { afterEach, beforeAll, describe, expect, it, vi } from 'vitest';
 
-import safeLazy, { createSafeLazy, defaultStorageKey, ForceReloadStorage } from '.';
+import { safeLazy, createSafeLazy, defaultStorageKey, ForceReloadStorage } from '.';
 
 const storage = new Storage();
 

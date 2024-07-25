@@ -13,7 +13,7 @@ npm i react-safe-lazy
 Just replace `React.lazy` with `safeLazy` and you are good to go.
 
 ```tsx
-import safeLazy from 'react-safe-lazy';
+import { safeLazy } from 'react-safe-lazy';
 
 const MyComponent = safeLazy(() => import('./MyComponent'));
 ```

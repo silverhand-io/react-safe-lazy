@@ -3,10 +3,14 @@
   "version": "0.1.0",
   "description": "Safely use `React.lazy` with retry and reload strategies.",
   "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
+    "build": "vite build",
     "lint": "eslint src --ext .ts,.tsx",
-    "test": "vitest"
+    "test": "vitest",
+    "prepack": "vitest --no-watch && pnpm build"
   },
   "keywords": [
     "react",
@@ -30,13 +34,12 @@
     "prettier": "^3.3.3",
     "react": "^18.3.1",
     "typescript": "^5.5.4",
+    "vite": "^5.3.5",
+    "vite-plugin-dts": "4.0.0-beta.1",
     "vitest": "^2.0.4"
   },
   "peerDependencies": {
     "react": "^18.3.1"
-  },
-  "engines": {
-    "node": "^20.9.0"
   },
   "eslintConfig": {
     "extends": "@silverhand/eslint-config-react"
