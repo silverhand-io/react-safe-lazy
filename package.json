@@ -1,0 +1,52 @@
+{
+  "name": "react-safe-lazy",
+  "version": "0.1.0",
+  "description": "Safely use `React.lazy` with retry and reload strategies.",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint src --ext .ts,.tsx",
+    "test": "vitest"
+  },
+  "keywords": [
+    "react",
+    "lazy",
+    "suspense",
+    "retry",
+    "reload"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@silverhand/eslint-config": "^6.0.1",
+    "@silverhand/eslint-config-react": "^6.0.2",
+    "@silverhand/ts-config": "^6.0.0",
+    "@silverhand/ts-config-react": "^6.0.0",
+    "@testing-library/react": "^16.0.0",
+    "@types/react": "^18.3.3",
+    "@vitest/coverage-v8": "^2.0.4",
+    "eslint": "^8.56.0",
+    "happy-dom": "^14.12.3",
+    "prettier": "^3.3.3",
+    "react": "^18.3.1",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.4"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1"
+  },
+  "engines": {
+    "node": "^20.9.0"
+  },
+  "eslintConfig": {
+    "extends": "@silverhand/eslint-config-react"
+  },
+  "prettier": "@silverhand/eslint-config/.prettierrc",
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "stylelint"
+      ]
+    }
+  }
+}

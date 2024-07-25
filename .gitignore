@@ -1,0 +1,34 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Dependencies
+node_modules
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+
+# Report
+/report.json
+
+# Production
+build
+lib
+dist
+
+# Logs
+logs
+*.log
+*.log.*
+
+# Misc
+cache
+.*cache
+.DS_Store
+*.env
+*.vars
+.idea/
+*.pem
+.history
+fly.toml
+.wrangler
