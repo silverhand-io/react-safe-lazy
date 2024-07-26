@@ -1,4 +1,4 @@
-import { type ComponentType, lazy } from 'react';
+import { lazy, type LazyExoticComponent, type ComponentType } from 'react';
 
 /** The default key used to store the force-reloaded function information in the session storage. */
 export const defaultStorageKey = 'forceReloadedImportFunctions';
@@ -145,7 +145,9 @@ export const createSafeLazy = (config: SafeLazyConfigInit = {}) => {
    * A wrapper around React's `lazy` function that uses the provided configuration to handle
    * component loading errors.
    */
-  const safeLazy = <T>(importFunction: () => Promise<{ default: ComponentType<T> }>) => {
+  const safeLazy = <T>(
+    importFunction: () => Promise<{ default: ComponentType<T> }>
+  ): LazyExoticComponent<ComponentType<T>> => {
     // eslint-disable-next-line @silverhand/fp/no-let
     let retried = 0;
     const tryImport = async () => {
@@ -191,7 +193,8 @@ export const createSafeLazy = (config: SafeLazyConfigInit = {}) => {
 };
 
 /**
- * A `safeLazy` function with default configuration.
+ * A wrapper around React's `lazy` function that uses the default configuration to handle component
+ * loading errors.
  *
  * - It will not retry importing the component if it fails to load.
  * - It will reload the page once if the component fails to load. If the lazy component fails to
