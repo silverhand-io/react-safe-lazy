@@ -7,6 +7,8 @@
 
 A simple and safe way to use `React.lazy` when you are iterating React app fast. It will catch the error and automatically retry to import or refresh the page when a lazy React component fails to load.
 
+See this [blog post](https://blog.logto.io/react-safe-lazy/?ref=github) for the motivation of this library and implementation details.
+
 ## Installation
 
 ```bash
@@ -91,6 +93,9 @@ const safeLazy = createSafeLazy({
   },
 });
 ```
+
+> [!NOTE]
+> In the above example, the `safeLazy` function will retry importing the component 3 times for each page load, which means that the import function will be called at most 4 * 3 = 12 times before giving up.
 
 ## License
 
