@@ -12,6 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/silverhand-io/react-safe-lazy.git"
   },
+  "sideEffects": false,
   "scripts": {
     "build": "vite build",
     "lint": "eslint src --ext .ts,.tsx",

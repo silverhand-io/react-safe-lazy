@@ -1,4 +1,9 @@
-# React safe lazy
+# react-safe-lazy
+
+![GitHub branch check runs](https://img.shields.io/github/check-runs/silverhand-io/react-safe-lazy/master)
+[![codecov](https://codecov.io/gh/silverhand-io/react-safe-lazy/graph/badge.svg?token=JXZ4C50SCV)](https://codecov.io/gh/silverhand-io/react-safe-lazy)
+![NPM version](https://img.shields.io/npm/v/react-safe-lazy)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/react-safe-lazy)
 
 A simple and safe way to use `React.lazy` when you are iterating React app fast. It will catch the error and automatically retry to import or refresh the page when a lazy React component fails to load.
 
