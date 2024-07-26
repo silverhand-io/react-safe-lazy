@@ -6,6 +6,12 @@
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
+  "author": "Silverhand Inc. <contact@silverhand.io>",
+  "homepage": "https://github.com/silverhand-io/react-safe-lazy",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silverhand-io/react-safe-lazy.git"
+  },
   "scripts": {
     "build": "vite build",
     "lint": "eslint src --ext .ts,.tsx",
@@ -19,7 +25,6 @@
     "retry",
     "reload"
   ],
-  "author": "",
   "license": "MIT",
   "devDependencies": {
     "@silverhand/eslint-config": "^6.0.1",
