@@ -1,5 +1,4 @@
-import { render } from '@testing-library/react';
-import { act } from 'react';
+import { render, act } from '@testing-library/react';
 import { afterEach, beforeAll, describe, expect, it, vi } from 'vitest';
 
 import { safeLazy, createSafeLazy, defaultStorageKey, ForceReloadStorage } from '.';

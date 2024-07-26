@@ -8,6 +8,9 @@ A simple and safe way to use `React.lazy` when you are iterating React app fast.
 npm i react-safe-lazy
 ```
 
+- Direct dependencies: 0.
+- Peer dependency: `react@^18.0.0`.
+
 ## Usage
 
 Just replace `React.lazy` with `safeLazy` and you are good to go.
