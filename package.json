@@ -1,6 +1,6 @@
 {
   "name": "react-safe-lazy",
-  "version": "0.0.0",
+  "version": "0.1.0-beta.0",
   "description": "Safely use `React.lazy` with retry and reload strategies.",
   "main": "dist/index.js",
   "module": "dist/index.js",
